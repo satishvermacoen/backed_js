@@ -4,8 +4,9 @@ import { User } from "../models/user.model.js";
 import { uploadOnCloudinary } from "../utils/cloudinary.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { application } from "express";
+import { generateAccessAndRefereshTokens } from "./token.controllers.js";
 
-
+/*
 const generateAccessAndRefereshTokens = async(userId) => {
     try {
         const user = await User.findById(userId)
@@ -23,6 +24,7 @@ const generateAccessAndRefereshTokens = async(userId) => {
     }
 
 }
+*/
 
 // Register User Controller
 
